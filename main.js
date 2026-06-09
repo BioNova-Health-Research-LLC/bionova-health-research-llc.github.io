@@ -72,7 +72,7 @@ contactBtn.addEventListener('click', () => {
   contactBtn.textContent = 'Sending…';
 
   setTimeout(() => {
-    feedback.style.color = 'var(--green-600)';
+    feedback.style.color = '#1a56a0';
     feedback.textContent = "Thanks! We'll be in touch within 48 hours.";
     emailInput.value = '';
     contactBtn.textContent = 'Sent ✓';

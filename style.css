@@ -55,8 +55,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.9rem 2.5rem;
-  background: rgba(255,255,255,0.92);
+  padding: 0.5rem 2.5rem;
+  background: rgba(255,255,255,0.95);
   backdrop-filter: blur(8px);
   border-bottom: 0.5px solid var(--gray-200);
 }
@@ -72,7 +72,7 @@ a {
 }
 
 .logo-img {
-  height: 48px;
+  height: 72px;
   width: auto;
   display: block;
 }
@@ -108,15 +108,21 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
+  background: #0a1f44;
 }
 
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
   background-size: cover;
-  background-position: center;
-  opacity: 0.18;
+  background-position: center left;
+  opacity: 0.22;
   z-index: 0;
+  mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
 }
 
 .hero-content {
@@ -134,10 +140,11 @@ a {
   font-weight: 500;
   padding: 5px 14px;
   border-radius: 999px;
-  background: var(--green-50);
-  color: var(--green-600);
+  background: rgba(255,255,255,0.12);
+  color: #a8d8f0;
   margin-bottom: 1.75rem;
   letter-spacing: 0.02em;
+  border: 0.5px solid rgba(255,255,255,0.2);
 }
 
 .hero-content h1 {
@@ -146,15 +153,16 @@ a {
   line-height: 1.15;
   letter-spacing: -0.025em;
   margin-bottom: 1.25rem;
+  color: #ffffff;
 }
 
 .hero-content h1 .accent {
-  color: var(--green-400);
+  color: #5bb8f5;
 }
 
 .hero-content p {
   font-size: 17px;
-  color: var(--gray-500);
+  color: rgba(255,255,255,0.72);
   line-height: 1.7;
   max-width: 540px;
   margin: 0 auto 2.25rem;
@@ -167,11 +175,20 @@ a {
   flex-wrap: wrap;
 }
 
+.hero-content .btn-secondary {
+  border-color: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+.hero-content .btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
 /* ── BUTTONS ── */
 .btn-primary {
   display: inline-block;
   padding: 11px 24px;
-  background: var(--green-400);
+  background: #1a56a0;
   color: #fff;
   border: none;
   border-radius: var(--radius-md);
@@ -183,7 +200,7 @@ a {
 }
 
 .btn-primary:hover {
-  background: var(--green-600);
+  background: #0d3d7a;
 }
 
 .btn-primary:active {
@@ -223,7 +240,7 @@ a {
 .section-tag {
   font-size: 12px;
   font-weight: 600;
-  color: var(--green-600);
+  color: #1a56a0;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 0.75rem;
@@ -259,8 +276,8 @@ a {
 }
 
 .card:hover {
-  border-color: var(--green-100);
-  box-shadow: 0 2px 12px rgba(29, 158, 117, 0.08);
+  border-color: #b8d4f0;
+  box-shadow: 0 2px 12px rgba(26, 86, 160, 0.08);
 }
 
 .card-icon {
@@ -355,7 +372,7 @@ a {
 }
 
 .open {
-  color: var(--green-400) !important;
+  color: #1a56a0 !important;
   font-weight: 500;
 }
 
@@ -380,7 +397,7 @@ a {
 }
 
 .partner-card:hover {
-  border-color: var(--green-100);
+  border-color: #b8d4f0;
 }
 
 .partner-icon {
@@ -445,14 +462,14 @@ a {
 }
 
 .contact-form input[type="email"]:focus {
-  border-color: var(--green-400);
-  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.12);
+  border-color: #1a56a0;
+  box-shadow: 0 0 0 3px rgba(26, 86, 160, 0.12);
 }
 
 .form-feedback {
   margin-top: 1rem;
   font-size: 14px;
-  color: var(--green-600);
+  color: #1a56a0;
   min-height: 1.4rem;
 }
 
