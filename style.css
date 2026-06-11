@@ -74,7 +74,7 @@ a {
 }
 
 .logo-img {
-  height: 52px;
+  height: 68px;
   width: auto;
   display: block;
 }
@@ -89,6 +89,7 @@ a {
 .nav-links a:hover {
   color: var(--gray-900);
 }
+
 
 .nav-cta {
   font-size: 14px;
@@ -162,15 +163,16 @@ a {
 
 .hero-content .hero-tag {
   display: inline-block;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 20px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.12);
-  color: #a8d8f0;
+  background: rgba(91,184,245,0.15);
+  color: #5bb8f5;
   margin-bottom: 1.75rem;
-  letter-spacing: 0.02em;
-  border: 0.5px solid rgba(255,255,255,0.2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(91,184,245,0.35);
 }
 
 .hero-content h1 {
