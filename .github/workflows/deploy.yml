@@ -13,16 +13,42 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
+      - name: Minify and build
+        run: |
+          python3 - <<'EOF'
+          import re, shutil, os
 
-      - name: Install dependencies
-        run: npm ci
+          shutil.copytree('assets', 'dist/assets')
+          shutil.copy('index.html', 'dist/index.html')
 
-      - name: Build (minify)
-        run: npm run build
+          # Minify CSS
+          css_path = 'dist/assets/styles/style.css'
+          css = open(css_path).read()
+          css = re.sub(r'/\*.*?\*/', '', css, flags=re.DOTALL)
+          css = re.sub(r'\s+', ' ', css)
+          css = re.sub(r'\s*([{}:;,>~+])\s*', r'\1', css)
+          css = css.strip()
+          open(css_path, 'w').write(css)
+
+          # Minify JS
+          js_path = 'dist/assets/scripts/main.js'
+          js = open(js_path).read()
+          js = re.sub(r'/\*.*?\*/', '', js, flags=re.DOTALL)
+          js = re.sub(r'//[^\n]*', '', js)
+          js = re.sub(r'\s+', ' ', js)
+          js = js.strip()
+          open(js_path, 'w').write(js)
+
+          # Minify HTML
+          html_path = 'dist/index.html'
+          html = open(html_path).read()
+          html = re.sub(r'<!--.*?-->', '', html, flags=re.DOTALL)
+          html = re.sub(r'\s+', ' ', html)
+          html = html.strip()
+          open(html_path, 'w').write(html)
+
+          print('Build complete')
+          EOF
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
