@@ -1,3 +1,30 @@
+/* ── STAGGERED CARD REVEAL ── */
+const cardContainers = document.querySelectorAll('.cards, .team-grid, .partners-grid');
+
+cardContainers.forEach(container => {
+  const cards = container.querySelectorAll('.card, .team-card, .partner-card');
+  cards.forEach((card, i) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(24px)';
+    card.style.transition = `opacity 0.5s ease ${i * 0.1}s, transform 0.5s ease ${i * 0.1}s`;
+  });
+
+  const cardObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const cards = entry.target.querySelectorAll('.card, .team-card, .partner-card');
+        cards.forEach(card => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        });
+        cardObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  cardObserver.observe(container);
+});
+
 /* ── SCROLL REVEAL ── */
 const revealEls = document.querySelectorAll(
   '.hero, .stats, .section, .contact-section'

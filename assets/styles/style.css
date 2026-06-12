@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--gray-900);
   background: #fff;
@@ -57,10 +57,9 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0.65rem 2.5rem;
-  background: rgba(255,255,255,0.95);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background: #ffffff;
   border-bottom: 0.5px solid var(--gray-200);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .logo {
@@ -77,6 +76,7 @@ a {
   height: 68px;
   width: auto;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 .nav-links {
@@ -291,15 +291,15 @@ a {
 /* ── CARDS ── */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
 }
 
 .card {
   background: #fff;
   border: 0.5px solid var(--gray-200);
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
+  padding: 2rem;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
@@ -732,6 +732,7 @@ a {
     mask-image: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
   }
+  .cards { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 900px) {
@@ -748,6 +749,7 @@ a {
 
   .section { padding: 3rem 1.25rem; }
   .section h2 { font-size: 24px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
 
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .team-grid { grid-template-columns: 1fr; }
