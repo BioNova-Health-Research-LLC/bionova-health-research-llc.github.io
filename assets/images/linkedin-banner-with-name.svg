@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <linearGradient id="fade-left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a1f44" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#0a1f44" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="fade-right" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="60%" stop-color="#0a1f44" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0a1f44" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="#0a1f44"/>
+
+  <!-- Left illustration: gene network -->
+  <image href="hero-left.svg" x="-40" y="-30" width="560" height="456" opacity="0.65"/>
+  <rect x="0" y="0" width="560" height="396" fill="url(#fade-left)"/>
+
+  <!-- Right illustration: DNA helix -->
+  <image href="hero.svg" x="1064" y="-30" width="560" height="456" opacity="0.65"/>
+  <rect x="1024" y="0" width="560" height="396" fill="url(#fade-right)"/>
+
+  <!-- Center text -->
+  <text x="792" y="150" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#5bb8f5" text-anchor="middle" letter-spacing="5" opacity="0.95">✦ BIONOVA HEALTH RESEARCH LLC ✦</text>
+  <text x="792" y="210" font-family="Inter, system-ui, sans-serif" font-size="38" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="-1">Advancing the Future of</text>
+  <text x="792" y="256" font-family="Inter, system-ui, sans-serif" font-size="38" font-weight="600" fill="#5bb8f5" text-anchor="middle" letter-spacing="-1">Biomedical Research.</text>
+  <text x="792" y="300" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400" fill="rgba(255,255,255,0.55)" text-anchor="middle">Science-driven. Expertise-led.</text>
+</svg>
