@@ -69,6 +69,20 @@ const sectionObserver = new IntersectionObserver(
 sections.forEach(s => sectionObserver.observe(s));
 
 
+/* ── PUBLICATION TABS ── */
+document.querySelectorAll('.pub-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const key = tab.dataset.tab;
+    document.querySelectorAll('.pub-tab').forEach(t => {
+      t.classList.toggle('active', t === tab);
+      t.setAttribute('aria-selected', t === tab);
+    });
+    document.querySelectorAll('.pub-panel').forEach(p => {
+      p.classList.toggle('active', p.dataset.tab === key);
+    });
+  });
+});
+
 /* ── CONTACT FORM ── */
 const contactBtn = document.getElementById('contact-btn');
 const emailInput = document.getElementById('email-input');

@@ -287,7 +287,6 @@ a {
   font-size: 17px;
   color: #555;
   margin-bottom: 3rem;
-  max-width: 680px;
   line-height: 1.75;
 }
 
@@ -309,7 +308,8 @@ a {
 }
 
 .card:hover {
-  box-shadow: 0 4px 20px rgba(26, 86, 160, 0.1);
+  background: #f8fafc;
+  box-shadow: 0 4px 20px rgba(26, 86, 160, 0.08);
 }
 
 .card-icon {
@@ -433,6 +433,7 @@ a {
 }
 
 .partner-card:hover {
+  background: #f8fafc;
   border-color: #b8d4f0;
 }
 
@@ -563,6 +564,11 @@ a {
   border: 0.5px solid var(--gray-200);
   border-radius: var(--radius-lg);
   background: #fff;
+  transition: background 0.15s;
+}
+
+.highlight:hover {
+  background: #f8fafc;
 }
 
 .highlight-icon {
@@ -637,6 +643,49 @@ a {
   line-height: 1.5;
 }
 
+/* ── PUB TABS ── */
+.pub-tabs {
+  margin-top: 2rem;
+}
+
+.pub-tab-list {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--gray-200);
+  margin-bottom: 0;
+}
+
+.pub-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding: 0.6rem 1.25rem;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.pub-tab:hover {
+  color: #1a56a0;
+}
+
+.pub-tab.active {
+  color: #1a56a0;
+  border-bottom-color: #1a56a0;
+}
+
+.pub-panel {
+  display: none;
+}
+
+.pub-panel.active {
+  display: block;
+}
+
 .pub-more {
   margin-top: 1.5rem;
   text-align: center;
@@ -663,6 +712,7 @@ a {
 }
 
 .team-card:hover {
+  background: #f8fafc;
   box-shadow: 0 4px 20px rgba(0,0,0,0.07);
 }
 
