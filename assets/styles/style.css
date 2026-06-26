@@ -458,7 +458,7 @@ a {
   background: var(--gray-100);
   border-top: 0.5px solid var(--gray-200);
   border-bottom: 0.5px solid var(--gray-200);
-  padding: 5rem 2rem;
+  padding: 5rem 2.5rem;
   text-align: center;
 }
 
@@ -472,7 +472,57 @@ a {
 .contact-section > p {
   font-size: 15px;
   color: var(--gray-500);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.contact-tile {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-top: 3px solid #1a56a0;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  padding: 2rem 1.75rem;
+  text-align: left;
+  transition: background 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-tile:hover {
+  background: #f8fafc;
+  box-shadow: 0 4px 20px rgba(26, 86, 160, 0.08);
+}
+
+.contact-tile-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.9rem;
+  line-height: 1;
+}
+
+.contact-tile h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.contact-tile p {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.contact-tile .btn-primary {
+  align-self: flex-start;
 }
 
 .contact-form {
@@ -814,6 +864,7 @@ a {
   .team-grid { grid-template-columns: 1fr; }
 
   .contact-section { padding: 3rem 1.25rem; }
+  .contact-tiles { grid-template-columns: 1fr; }
   .footer { flex-direction: column; text-align: center; padding: 1.25rem; }
 }
 
