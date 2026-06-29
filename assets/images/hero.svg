@@ -84,5 +84,5 @@
 
   <!-- Genome sequence strip -->
   <line x1="100" y1="505" x2="540" y2="505" stroke="#38bdf8" stroke-width="0.8" opacity="0.3"/>
-  <text x="108" y="518" fill="#7dd3fc" font-size="13" font-family="monospace" letter-spacing="4" opacity="0.6">A T G C G A T C G A A T G C C A T G G A C T A G</text>
+  <text x="108" y="518" fill="#7dd3fc" font-size="18" font-family="monospace" letter-spacing="4" opacity="0.6">A T G C G A T C G A A T G C C A T G G A C T A G</text>
 </svg>
