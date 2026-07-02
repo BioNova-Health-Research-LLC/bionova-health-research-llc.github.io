@@ -73,63 +73,56 @@
   <!-- ── TP53 — central hub (largest, white glow) ── -->
   <circle class="halo" cx="200" cy="255" r="16" stroke="#e0f2fe" stroke-width="1.5" fill="none" style="animation-delay:0s"/>
   <circle cx="200" cy="255" r="21" fill="#1e3a8a" stroke="#e0f2fe" stroke-width="2" filter="url(#gl)"/>
-  <text x="200" y="259" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#f0f9ff" font-size="10">TP53</text>
+  <text x="200" y="255" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#f0f9ff" font-size="10">TP53</text>
 
   <!-- ── MDM2 ── -->
   <circle class="halo" cx="140" cy="168" r="12" stroke="#38bdf8" stroke-width="1.2" fill="none" style="animation-delay:0.6s"/>
   <circle cx="140" cy="168" r="16" fill="#1d4ed8" stroke="#38bdf8" stroke-width="1.5" filter="url(#gl-sm)"/>
-  <text x="140" y="172" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">MDM2</text>
+  <text x="140" y="168" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">MDM2</text>
 
   <!-- ── BRCA1 ── -->
   <circle class="halo" cx="285" cy="155" r="12" stroke="#7dd3fc" stroke-width="1.2" fill="none" style="animation-delay:1.2s"/>
   <circle cx="285" cy="155" r="16" fill="#1d4ed8" stroke="#7dd3fc" stroke-width="1.5" filter="url(#gl-sm)"/>
-  <text x="285" y="159" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">BRCA1</text>
+  <text x="285" y="155" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">BRCA1</text>
 
   <!-- ── ATM ── -->
   <circle class="halo" cx="316" cy="240" r="10" stroke="#38bdf8" stroke-width="1" fill="none" style="animation-delay:0.4s"/>
   <circle cx="316" cy="240" r="14" fill="#1e40af" stroke="#38bdf8" stroke-width="1.5" filter="url(#gl-sm)"/>
-  <text x="316" y="244" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">ATM</text>
+  <text x="316" y="240" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">ATM</text>
 
   <!-- ── CDKN1A ── -->
   <circle class="halo" cx="275" cy="345" r="10" stroke="#7dd3fc" stroke-width="1" fill="none" style="animation-delay:1.8s"/>
   <circle cx="275" cy="345" r="14" fill="#1e40af" stroke="#7dd3fc" stroke-width="1.5" filter="url(#gl-sm)"/>
-  <text x="275" y="349" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="8.5">CDKN1A</text>
+  <text x="275" y="345" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="8.5">CDKN1A</text>
 
   <!-- ── PTEN ── -->
   <circle class="halo" cx="112" cy="290" r="10" stroke="#38bdf8" stroke-width="1" fill="none" style="animation-delay:0.9s"/>
   <circle cx="112" cy="290" r="14" fill="#1e40af" stroke="#38bdf8" stroke-width="1.5" filter="url(#gl-sm)"/>
-  <text x="112" y="294" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">PTEN</text>
+  <text x="112" y="290" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">PTEN</text>
 
   <!-- ── STAT3 ── -->
   <circle class="halo" cx="130" cy="345" r="9" stroke="#93c5fd" stroke-width="1" fill="none" style="animation-delay:1.5s"/>
   <circle cx="130" cy="345" r="13" fill="#1e3a8a" stroke="#93c5fd" stroke-width="1.2" filter="url(#gl-sm)"/>
-  <text x="130" y="349" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="8.5">STAT3</text>
+  <text x="130" y="345" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="8.5">STAT3</text>
 
   <!-- ── EGFR ── -->
   <circle class="halo" cx="76" cy="180" r="10" stroke="#7dd3fc" stroke-width="1" fill="none" style="animation-delay:0.3s"/>
   <circle cx="76" cy="180" r="14" fill="#1d4ed8" stroke="#7dd3fc" stroke-width="1.5" filter="url(#gl-sm)"/>
-  <text x="76" y="184" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">EGFR</text>
+  <text x="76" y="180" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">EGFR</text>
 
   <!-- ── AKT1 ── -->
   <circle class="halo" cx="360" cy="310" r="10" stroke="#38bdf8" stroke-width="1" fill="none" style="animation-delay:2.0s"/>
   <circle cx="360" cy="310" r="14" fill="#1e40af" stroke="#38bdf8" stroke-width="1.5" filter="url(#gl-sm)"/>
-  <text x="360" y="314" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">AKT1</text>
+  <text x="360" y="310" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">AKT1</text>
 
   <!-- ── MTOR ── -->
   <circle class="halo" cx="390" cy="210" r="9" stroke="#7dd3fc" stroke-width="1" fill="none" style="animation-delay:1.1s"/>
   <circle cx="390" cy="210" r="13" fill="#1e3a8a" stroke="#7dd3fc" stroke-width="1.2" filter="url(#gl-sm)"/>
-  <text x="390" y="214" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">MTOR</text>
+  <text x="390" y="210" class="node-lbl" text-anchor="middle" dominant-baseline="middle" fill="#bae6fd" font-size="9">MTOR</text>
 
   <!-- Peripheral leaf nodes (smaller, no label) -->
   <circle cx="56"  cy="100" r="7"  fill="#1e3a8a" stroke="#60a5fa" stroke-width="1" opacity="0.7" filter="url(#gl-sm)"/>
   <circle cx="420" cy="140" r="7"  fill="#1e3a8a" stroke="#60a5fa" stroke-width="1" opacity="0.7" filter="url(#gl-sm)"/>
   <circle cx="90"  cy="430" r="7"  fill="#1e3a8a" stroke="#60a5fa" stroke-width="1" opacity="0.6" filter="url(#gl-sm)"/>
   <circle cx="400" cy="400" r="7"  fill="#1e3a8a" stroke="#60a5fa" stroke-width="1" opacity="0.6" filter="url(#gl-sm)"/>
-
-
-  <!-- ═══════════════════════════════════
-       GENOME STRIP — bottom
-       ═══════════════════════════════════ -->
-  <line x1="20" y1="504" x2="440" y2="504" stroke="#38bdf8" stroke-width="0.5" opacity="0.2"/>
-  <text x="24" y="515" fill="#7dd3fc" font-size="8" font-family="monospace" letter-spacing="3" opacity="0.4">G C A T G G A T C G T A C C G A T A T G C G A</text>
 </svg>

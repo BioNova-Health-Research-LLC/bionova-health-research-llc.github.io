@@ -420,18 +420,22 @@ a {
 
 /* ── PARTNERS ── */
 .partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .partner-card {
   border: 0.5px solid var(--gray-200);
   border-radius: var(--radius-lg);
-  padding: 1.5rem 1rem;
+  padding: 2rem 2.5rem;
   text-align: center;
   background: #fff;
   transition: border-color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .partner-card:hover {
@@ -440,30 +444,9 @@ a {
 }
 
 .partner-icon {
-  font-size: 27px;
-  margin-bottom: 10px;
-}
-
-.partner-logo {
-  height: 48px;
-  width: auto;
-  max-width: 140px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.partner-name {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.partner-type {
-  font-size: 12px;
-  color: var(--gray-500);
-  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ── CONTACT ── */
@@ -658,7 +641,7 @@ a {
 }
 
 .pub-item {
-  padding: 1.25rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border-bottom: 0.5px solid var(--gray-200);
   background: #fff;
   transition: background 0.15s;
@@ -802,19 +785,20 @@ a {
 }
 
 .team-photo {
-  width: 88px;
-  height: 88px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-  border: 2px solid #e0f2fe;
+  border: none;
   margin-bottom: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 19px;
+  font-size: 28px;
   font-weight: 600;
   color: #1a56a0;
   letter-spacing: 0.04em;
+  overflow: hidden;
 }
 
 .team-photo::after {
