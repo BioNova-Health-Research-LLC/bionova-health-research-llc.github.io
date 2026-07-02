@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="120" viewBox="0 0 60 120">
+  <!-- Strand 1: left-to-right sine -->
+  <path d="M 45,0 C 45,30 15,30 15,60 C 15,90 45,90 45,120"
+        fill="none" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Strand 2: right-to-left sine (opposite phase) -->
+  <path d="M 15,0 C 15,30 45,30 45,60 C 45,90 15,90 15,120"
+        fill="none" stroke="#5bb8f5" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Rungs -->
+  <line x1="15" y1="12"  x2="45" y2="12"  stroke="#378ADD" stroke-width="1" stroke-linecap="round"/>
+  <line x1="22" y1="30"  x2="38" y2="30"  stroke="#378ADD" stroke-width="1" stroke-linecap="round"/>
+  <line x1="15" y1="48"  x2="45" y2="48"  stroke="#378ADD" stroke-width="1" stroke-linecap="round"/>
+  <line x1="15" y1="60"  x2="45" y2="60"  stroke="#378ADD" stroke-width="1" stroke-linecap="round"/>
+  <line x1="15" y1="72"  x2="45" y2="72"  stroke="#378ADD" stroke-width="1" stroke-linecap="round"/>
+  <line x1="22" y1="90"  x2="38" y2="90"  stroke="#378ADD" stroke-width="1" stroke-linecap="round"/>
+  <line x1="15" y1="108" x2="45" y2="108" stroke="#378ADD" stroke-width="1" stroke-linecap="round"/>
+</svg>
