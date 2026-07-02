@@ -51,6 +51,10 @@ jobs:
           open(html_path, 'w').write(html)
 
           print('Build complete')
+          import glob
+          imgs = glob.glob('dist/assets/images/*.jpg') + glob.glob('dist/assets/images/*.png') + glob.glob('dist/assets/images/*.jpeg')
+          print(f'Images in dist: {len(imgs)}')
+          for i in imgs: print(' ', i)
           EOF
 
       - name: Deploy to gh-pages
