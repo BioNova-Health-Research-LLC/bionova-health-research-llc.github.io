@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 48" width="210" height="48">
-  <text x="0" y="40" font-family="'Arial Narrow', Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 48" width="230" height="48">
+  <text x="0" y="40" font-family="Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
     <tspan fill="#5bb8f5">BIO</tspan><tspan fill="#0a1f44">NOVA</tspan>
   </text>
-  <!-- 3 white cut lines across the O -->
-  <line x1="36" y1="17" x2="50" y2="17" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="34" y1="24" x2="52" y2="24" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="36" y1="31" x2="50" y2="31" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- 3 white cut lines across the O (Arial: B~27px, I~14px, O center~55) -->
+  <line x1="47" y1="17" x2="63" y2="17" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="45" y1="24" x2="65" y2="24" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="47" y1="31" x2="63" y2="31" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
 </svg>

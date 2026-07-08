@@ -79,6 +79,15 @@ a {
 }
 .logo-img-mobile { display: none; }
 
+/* Switch to compact logo on anything narrower than a small laptop —
+   covers all iPhone landscape widths (up to 932px) */
+@media (max-width: 960px) {
+  .logo-img-full { display: none; }
+  .logo-img-mobile { display: block; height: 40px; }
+  .nav { padding: 0.65rem 1.25rem; }
+  .nav-links { gap: 1.1rem; font-size: 14px; }
+}
+
 .nav-links {
   display: flex;
   gap: 1.75rem;
