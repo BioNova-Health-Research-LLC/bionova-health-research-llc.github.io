@@ -844,21 +844,17 @@ a {
 @media (max-width: 640px) {
   .nav-links { display: none; }
 
+  /* shrink logo so HEALTH/RESEARCH/LLC doesn't get squeezed */
+  .logo-img { height: 34px; }
+
   .hero-content { padding: 4rem 1.25rem 3rem; }
   .hero-content h1 { font-size: 31px; }
   .hero-content p { font-size: 16px; }
   .section h2 { font-size: 27px; }
 
-  /* shrink illustrations to edges, tighten the fade so they don't crowd text */
-  .hero-illustration { width: 28%; opacity: 0.45; }
-  .hero-illustration-right {
-    mask-image: linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
-    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
-  }
-  .hero-illustration-left {
-    mask-image: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
-  }
+  /* hide hero illustrations entirely on mobile — no space */
+  .hero-illustration { display: none; }
+
   .cards { grid-template-columns: 1fr; }
 }
 
