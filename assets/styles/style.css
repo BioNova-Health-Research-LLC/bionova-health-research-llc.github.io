@@ -73,7 +73,7 @@ a {
 }
 
 .logo-img {
-  height: 68px;
+  height: 48px;
   width: auto;
   display: block;
 }
@@ -438,8 +438,8 @@ a {
 }
 
 .partner-card:hover {
-  background: #f8fafc;
   border-color: #b8d4f0;
+  box-shadow: 0 2px 12px rgba(91,184,245,0.10);
 }
 
 .partner-icon {
