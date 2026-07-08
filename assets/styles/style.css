@@ -77,6 +77,7 @@ a {
   width: auto;
   display: block;
 }
+.logo-img-mobile { display: none; }
 
 .nav-links {
   display: flex;
@@ -844,8 +845,9 @@ a {
 @media (max-width: 640px) {
   .nav-links { display: none; }
 
-  /* shrink logo so HEALTH/RESEARCH/LLC doesn't get squeezed */
-  .logo-img { height: 34px; }
+  /* swap to compact logo on mobile — avoids Arial Narrow fallback overflow */
+  .logo-img-full { display: none; }
+  .logo-img-mobile { display: block; height: 34px; }
 
   .hero-content { padding: 4rem 1.25rem 3rem; }
   .hero-content h1 { font-size: 31px; }

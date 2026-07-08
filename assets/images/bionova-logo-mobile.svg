@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 48" width="130" height="48">
+  <text x="0" y="40" font-family="'Arial Narrow', Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
+    <tspan fill="#5bb8f5">BIO</tspan><tspan fill="#0a1f44">NOVA</tspan>
+  </text>
+  <!-- 3 white cut lines across the O -->
+  <line x1="36" y1="17" x2="50" y2="17" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="34" y1="24" x2="52" y2="24" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="36" y1="31" x2="50" y2="31" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
