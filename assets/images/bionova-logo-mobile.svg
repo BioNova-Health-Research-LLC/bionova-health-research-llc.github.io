@@ -3,7 +3,7 @@
     <tspan fill="#5bb8f5">Bio</tspan><tspan fill="#0a1f44">Nova</tspan>
   </text>
   <!-- 3 white lines across lowercase o in Bio (Arial: B~27px, i~10px, o center~48) -->
-  <line x1="40" y1="22" x2="47" y2="22" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="40" y1="28" x2="48" y2="28" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
-  <line x1="40" y1="34" x2="47" y2="34" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="45" y1="22" x2="52" y2="22" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="45" y1="28" x2="53" y2="28" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="45" y1="34" x2="52" y2="34" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
 </svg>
