@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" width="260" height="48">
-  <text x="0" y="40" font-family="'Arial Narrow', Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
+  <text x="0" y="40" font-family="'Arial Narrow', Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" textLength="155" lengthAdjust="spacingAndGlyphs">
     <tspan fill="#5bb8f5">Bio</tspan><tspan fill="#0a1f44">Nova</tspan>
   </text>
   <!-- 3 white lines on left side of o only (o: x=29-47, center=38; i ends ~x=29) -->
